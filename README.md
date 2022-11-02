@@ -1,2 +1,3 @@
-# vapedrop
-Python app to calculate vape eJuice mix
+# Vapedrop
+
+Calculate you vape eJuice mix using the terminal.
