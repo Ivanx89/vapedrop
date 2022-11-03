@@ -37,7 +37,6 @@ def gcalc():
     else:
         print("Ha habido un error.")
 
-    print(float(nicokit20))
     recipe = [[base, flavorml, nicokit20, nicokit10]]
 
     # create header
