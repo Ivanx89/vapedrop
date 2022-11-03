@@ -10,7 +10,7 @@ def gcalc():
     #Ingredients:
     name    = input("Name of the flavor: ")
     totalml = int(input("Total ammount to make in mL [50/100]: "))
-    nic     = float(input("Nicotine concentration in mg/mL [1.6/3]: "))
+    nic     = float(input("Nicotine concentration in mg/mL [0/1.6/3]: "))
     flavor  = int(input("Flavor concentration in %: "))
     print(f"\nTo make {totalml}mL of {name} at {flavor}, you will have to mix:")
 
@@ -27,6 +27,9 @@ def gcalc():
         elif nic == 3:
             nicokit20 = 2
             base = base - 20
+        elif nic == 0:
+            nicokit20 = 0
+            nicokit10 = 0
     elif totalml == 50:
         if nic == 1.6:
             nicokit10 = 1
